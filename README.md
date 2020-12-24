@@ -1,7 +1,8 @@
 # Azure Sphere inter-core communication: integrating real-time Cortex-M4 with high-level Cortex-A7 app to send telemetry data to Azure IoT Hub  
 
-In this tutorial, we will build real-time Cortex M4 application to capture Ultrasonic telemetry data over AD input, transfer data to high-level app, running on top of Cortex-A7 core and transfer data to Azure IoT Hub.
+In this tutorial, we will build real-time and high-level applications deployed to MT3620 board to handle message communications with IoT Hub. We will use Analog input to capture voltage from the Ultrasonic sensor on the Cortex M4 core and use Cortex A7 core to integrate the board with IoT Hub over DPS. 
 
+###  Integration Diagram
 ![](https://borisbrodsky.com/wp-content/uploads/2020/12/MT3620-DATA-FLOW.png)
 
 ## Hardware Used
@@ -36,7 +37,7 @@ In this tutorial, we will build real-time Cortex M4 application to capture Ultra
 Create an IoT Hub and a device provisioning service. Follow stpes 1-5 in this [tutorial](https://docs.microsoft.com/en-us/learn/modules/develop-secure-iot-solutions-azure-sphere-iot-hub/8-exercise-connect-room-environment-monitor) 
 
 ###  Code Configuration
-1.	To setup up troubleshooting capabilities for real-time application you’ll need to enable TX-only UART capabilities. Putty or Termite can be used  to establish a serial connection with 115200-8-N-1 terminal settings
+1.	To setup up troubleshooting capabilities for real-time application you’ll need to enable TX UART capabilities. Putty or Termite can be used  to establish a serial connection with 115200-8-N-1 terminal settings. Check this [article](https://docs.microsoft.com/en-us/azure-sphere/install/qs-real-time-application?tabs=windows%2Ccliv1&pivots=vs-code) for more details.
 2.	In order to load high-level and real-time app to respective cores, we will need to mark application as Partner in launch.json of high-level and real-time (update if you change ComponentId values):
     - Update “AllowedApplicationConnections” to enable communication between cores
 3.	Enable Buffer Read/Write (update if you change ComponentId values):
@@ -57,3 +58,9 @@ Create an IoT Hub and a device provisioning service. Follow stpes 1-5 in this [t
 5.	Update high-level app app_manifest.json CmdArgs with Azure Portal values
     - ScopeID –  navigate to Azure Portal and select DPS, copy ID Scope value
     - HostName – Navigate to Azure Portal and select IoT Hub,  copy hostname value
+    
+## Build and run the apps
+Both applications need to be deployed and run simultaneously. Please ensure both applications designated as partner applications as described (here)[https://docs.microsoft.com/en-us/azure-sphere/app-development/sideload-app#mark-applications-as-partners]  
+
+1. On the File menu, Select Open Workspace.
+2. Select Run icon in the Side Menu and choose the "Launch for Azure Sphere Application(gdb)(workspace)" option from drop-down menu
