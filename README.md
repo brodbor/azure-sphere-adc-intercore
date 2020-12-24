@@ -3,7 +3,7 @@
 In this tutorial, we will build real-time and high-level applications deployed to MT3620 board to handle message communications with IoT Hub. We will use Analog input to capture voltage from the Ultrasonic sensor on the Cortex M4 core and use Cortex A7 core to integrate the board with IoT Hub over DPS. 
 
 ###  Integration Diagram
-![](https://borisbrodsky.com/wp-content/uploads/2020/12/MT3620-DATA-FLOW.png)
+![](https://borisbrodsky.com/wp-content/uploads/2020/12/MT3620-DATA-FLOW-1.png)
 
 ## Hardware Used
 1. Seeed [MT3620](https://www.seeedstudio.com/Azure-Sphere-MT3620-Development-Kit-US-Version-p-3052.html) Azure Sphere Board
@@ -63,4 +63,4 @@ Create an IoT Hub and a device provisioning service. Follow stpes 1-5 in this [t
 Both applications need to be deployed and run simultaneously. Please ensure both applications designated as partner applications as described [here](https://docs.microsoft.com/en-us/azure-sphere/app-development/sideload-app#mark-applications-as-partners)  
 
 1. On the File menu, Select Open Workspace.
-2. Select Run icon in the Side Menu and choose the "Launch for Azure Sphere Application(gdb)(workspace)" option from drop-down menu
+2. Select Run icon in the Side Menu and choose the "Launch for Azure Sphere Application(gdb)(workspace)" option from drop-down menu, click Run.
