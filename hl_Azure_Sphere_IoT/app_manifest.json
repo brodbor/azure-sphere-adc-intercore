@@ -1,0 +1,14 @@
+{
+  "SchemaVersion": 1,
+  "Name": "hl_Azure_Sphere_IoT",
+  "ComponentId": "ed4e667a-ce81-448b-aa64-85d28083559e",
+  "EntryPoint": "/bin/app",
+  "CmdArgs": [ "--HostName", "xxxx.azure-devices.net", "--ScopeID", "xxxxxx" ],
+  "Capabilities": {
+    "AllowedConnections": [ "global.azure-devices-provisioning.net", "xxxxx.azure-devices.net"],
+    "AllowedApplicationConnections": [ "e4c61359-a32e-4206-8127-2c5735b887e6" ],
+    "DeviceAuthentication": "221d2bf5-23b6-43d6-9ce0-9fb314a9af0d"
+  },
+  "ApplicationType": "Default",
+  "WifiConfig": true
+}

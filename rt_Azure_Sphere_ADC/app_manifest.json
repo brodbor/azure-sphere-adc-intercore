@@ -1,0 +1,14 @@
+{
+  "SchemaVersion": 1,
+  "Name": "rt_Azure_Sphere_ADC",
+  "ComponentId": "e4c61359-a32e-4206-8127-2c5735b887e6",
+  "EntryPoint": "/bin/app",
+    "Capabilities": {
+  
+        "Gpio": [ 12 ],
+        "Adc": [ "ADC-CONTROLLER-0"],
+        "AllowedApplicationConnections": [ "ed4e667a-ce81-448b-aa64-85d28083559e" ]
+ 
+    },
+  "ApplicationType": "RealTimeCapable"
+}
