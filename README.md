@@ -60,7 +60,7 @@ Create an IoT Hub and a device provisioning service. Follow stpes 1-5 in this [t
     - HostName – Navigate to Azure Portal and select IoT Hub,  copy hostname value
     
 ## Build and run the apps
-Both applications need to be deployed and run simultaneously. Please ensure both applications designated as partner applications as described (here)[https://docs.microsoft.com/en-us/azure-sphere/app-development/sideload-app#mark-applications-as-partners]  
+Both applications need to be deployed and run simultaneously. Please ensure both applications designated as partner applications as described [here](https://docs.microsoft.com/en-us/azure-sphere/app-development/sideload-app#mark-applications-as-partners)  
 
 1. On the File menu, Select Open Workspace.
 2. Select Run icon in the Side Menu and choose the "Launch for Azure Sphere Application(gdb)(workspace)" option from drop-down menu
