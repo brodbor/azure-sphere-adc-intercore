@@ -3,9 +3,9 @@
   "Name": "hl_Azure_Sphere_IoT",
   "ComponentId": "ed4e667a-ce81-448b-aa64-85d28083559e",
   "EntryPoint": "/bin/app",
-  "CmdArgs": [ "--HostName", "xxxx.azure-devices.net", "--ScopeID", "xxxxxx" ],
+  "CmdArgs": [ "--HostName", "IOT-HUB-2e4wstfw4ulcw.azure-devices.net", "--ScopeID", "0ne001CD07D" ],
   "Capabilities": {
-    "AllowedConnections": [ "global.azure-devices-provisioning.net", "xxxxx.azure-devices.net"],
+    "AllowedConnections": [ "global.azure-devices-provisioning.net", "IOT-HUB-2e4wstfw4ulcw.azure-devices.net"],
     "AllowedApplicationConnections": [ "e4c61359-a32e-4206-8127-2c5735b887e6" ],
     "DeviceAuthentication": "221d2bf5-23b6-43d6-9ce0-9fb314a9af0d"
   },
