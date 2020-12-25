@@ -3,7 +3,7 @@
 In this tutorial, we will build real-time and high-level applications deployed to MT3620 board to handle message communications with IoT Hub. We will use Analog input to capture voltage from the Ultrasonic sensor on the Cortex M4 core and use Cortex A7 core to integrate the board with IoT Hub over DPS. 
 
 ###  Integration Diagram
-![](https://borisbrodsky.com/wp-content/uploads/2020/12/MT3620-DATA-FLOW-1.png)
+![](https://borisbrodsky.com/wp-content/uploads/2020/12/MT3620-DATA-FLOW.png)
 
 ## Hardware Used
 1. Seeed [MT3620](https://www.seeedstudio.com/Azure-Sphere-MT3620-Development-Kit-US-Version-p-3052.html) Azure Sphere Board
