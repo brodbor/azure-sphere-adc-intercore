@@ -9,7 +9,8 @@ In this tutorial, we will build real-time and high-level applications deployed t
 1. Seeed [MT3620](https://www.seeedstudio.com/Azure-Sphere-MT3620-Development-Kit-US-Version-p-3052.html) Azure Sphere Board
 2. Sonar Sensor-[LV-MaxSonar-EZ1 Ultrasonic Range Finder](https://www.amazon.com/Maxbotix-MB1010-LV-MaxSonar-EZ1-Ultrasonic-Finder/dp/B00A7YGVJI)
 3. Visual Studio Code with number of extensions. Please check this [guide](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-arduino-iot-devkit-az3166-get-started) for additional details
-4. Troubleshoot real-time app output -[Adafruit FTDI Friend](https://www.amazon.com/Adafruit-FTDI-Friend-Extras-ADA284)
+4. Configure [GNU Arm Embedded Toolchain](https://docs.microsoft.com/en-us/azure-sphere/install/qs-multicore-dev)
+5. Troubleshoot real-time app output -[Adafruit FTDI Friend](https://www.amazon.com/Adafruit-FTDI-Friend-Extras-ADA284)
 
 ##  Azure Sphere - Quick Getting Started
 1. You'll need Azure Account and a small budget to run IoT Hub. (device provisioning service charges $0.123 per 1000 operations)
